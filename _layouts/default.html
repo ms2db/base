@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  {%- include head.html -%}
+  <body>
+    <main >
+      <div style="display: flex; width: 100%; align-items: stretch;">
+        {%- include sidebar.html -%}
+
+        <div id="content" class="col p-3 min-vh-100">
+          {{ content }}
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
